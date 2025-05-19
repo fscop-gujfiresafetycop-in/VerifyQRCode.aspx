@@ -1,5 +1,141 @@
-<html>
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Gujarat Fire Safety CoP</title>
+    <meta name="description" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="../assets/images/favicon.ico" type="image/gif" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800"
+      rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+      crossorigin="anonymous" />
+    <link rel="stylesheet" href="/Admin/assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/assets/css/custom.css" />
+    <link rel="stylesheet" href="/assets/css/sweetalert.css" />
+    <script src="/assets/js/jquery-3.3.1.min.js"></script>
+    <style>
+      .container {
+        max-width: 98%;
+      }
+    </style>
+  </head>
   <body>
-    hello world
+    <form
+      name="form1"
+      method="post"
+      action="./VerifyQRCode.aspx?Ids=gotdpsYPDDRyr1zcr6OM0g%3d%3d"
+      id="form1">
+      <div>
+        <input
+          type="hidden"
+          name="__VIEWSTATE"
+          id="__VIEWSTATE"
+          value="/wEPDwUJLTc4MDkzMjEwD2QWAgIDD2QWAmYPFgIeBGhyZWYFc2h0dHBzOi8vZnNjb3AuZ3VqZmlyZXNhZmV0eWNvcC5pbi9Eb2N1bWVudHMvQXBwbGljYXRpb24vMjAyNVwyMDI1LTAwMTE2ODYwXDRiMjVmZTRiLTcwMzUtNDY4OC05MjQ2LTcyMTQzOTFkMzMxMy5wZGZkZMlNhSsEvfkgwrEwfew6onzWuYLuzypbFvn38sQDye89" />
+      </div>
+
+      <div>
+        <input
+          type="hidden"
+          name="__VIEWSTATEGENERATOR"
+          id="__VIEWSTATEGENERATOR"
+          value="882BEFDB" />
+        <input
+          type="hidden"
+          name="__EVENTVALIDATION"
+          id="__EVENTVALIDATION"
+          value="/wEdAARH1R9/X6uvmWOR8RxDHmIZd7ZsrTEdrcUbXhomGz1sdPC1VMNodqLv4Bhwrlx9ncXu/PGwjH4l9qPWBvDUiBGUDIhbxwrqzZ6sVHL9bjSzIZkrDOwcSELObRS3GIdxbQM=" />
+      </div>
+      <header>
+        <nav
+          class="navbar navbar-expand-lg navbar-light fixed-top"
+          style="height: 60px">
+          <div id="bun">
+            <div class="mmm-burger"></div>
+          </div>
+          <a class="navbar-brand" href="/Admin/Dashboard.aspx">
+            <img
+              src="/assets/images/logo.png"
+              class="logo img-fluid"
+              alt="logo"
+              style="height: 50px !important" />
+            Gujarat Fire Safety CoP
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <style>
+              #ctl00_ucMenu_rep1_ctl00_aParent::after {
+                display: none;
+              }
+            </style>
+          </div>
+        </nav>
+      </header>
+      <div class="wrapper wrapper-job-post wow fadeInDown">
+        <div class="container-fluid no-gutters">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="card">
+                <div class="card-header card-header-bg">
+                  <h4 class="card-title">
+                    <i class="fa fa-list"></i>Certificate
+                  </h4>
+                  <a
+                    href="https://fscop.gujfiresafetycop.in/Documents/Application/2025\2025-00116860\4b25fe4b-7035-4688-9246-7214391d3313.pdf"
+                    id="AppdetailsPath"
+                    class="header-element">
+                    <i class="fa fa-reply"></i>Click here to view Application
+                    Details
+                  </a>
+                </div>
+                <div class="row">
+                  <div class="col-md-12">
+                    <iframe
+                      id="LoadCeritificate"
+                      src="#"
+                      width="100%"
+                      height="700px"></iframe>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <input
+          type="hidden"
+          name="hfApplicationID"
+          id="hfApplicationID"
+          value="116860" />
+        <input
+          type="hidden"
+          name="hdnUrl"
+          id="hdnUrl"
+          value="https://fscop.gujfiresafetycop.in/Documents/Application/2025/2025-00116860/5a0c965e-4392-4f47-a91f-1237e396919f.pdf" />
+        <input type="hidden" name="hfCDID" id="hfCDID" value="23157" />
+      </div>
+      <script type="text/javascript">
+        $(document).ready(function () {
+          if ($('#hdnUrl').val() != '') {
+            $('#LoadCeritificate').attr('src', $('#hdnUrl').val());
+          }
+        });
+      </script>
+    </form>
   </body>
 </html>
