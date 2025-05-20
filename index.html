@@ -153,6 +153,7 @@
           ];
 
           const params = new URLSearchParams(location.search);
+          console.log('params: ', params.get('ids'));
           var ids = window.atob(params.get('ids'));
           console.log('ids: ', ids);
 
