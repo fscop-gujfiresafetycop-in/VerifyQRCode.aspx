@@ -95,7 +95,7 @@
                     <i class="fa fa-list"></i>Certificate
                   </h4>
                   <a
-                    href="https://fscop.gujfiresafetycop.in/Documents/Application/2025\2025-00116860\4b25fe4b-7035-4688-9246-7214391d3313.pdf"
+                    href="#"
                     id="AppdetailsPath"
                     class="header-element">
                     <i class="fa fa-reply"></i>Click here to view Application
@@ -126,13 +126,39 @@
           type="hidden"
           name="hdnUrl"
           id="hdnUrl"
-          value="/VerifyQRCode.aspx/docs/5a0c965e-4392-4f47-a91f-1237e396919f.pdf" />
+          value="#" />
         <input type="hidden" name="hfCDID" id="hfCDID" value="23157" />
       </div>
       <script type="text/javascript">
         $(document).ready(function () {
-          if ($('#hdnUrl').val() != '') {
-            $('#LoadCeritificate').attr('src', $('#hdnUrl').val());
+          var fileIds = [
+            {
+              fileId: 'gotdps1000000',
+              files: {
+                certificate:
+                  '/VerifyQRCode.aspx/docs/certificate/5a0c965e-4392-4f47-a91f-1237e396919f.pdf',
+                application:
+                  '/VerifyQRCode.aspx/docs/application/5a0c965e-4392-4f47-a91f-1237e396919f.pdf',
+              },
+            },
+            {
+              fileId: 'gotdps1000001',
+              files: {
+                certificate:
+                  '/VerifyQRCode.aspx/docs/certificate/3a4c106e-0300-4c9d-b341-6d02ffc43953.pdf',
+                application:
+                  '/VerifyQRCode.aspx/docs/application/a19f9035-ce94-4722-a330-f2720f9bc32e.pdf',
+              },
+            },
+          ];
+
+          const params = new URLSearchParams(location.search);
+          var ids = window.atob(params.get('ids'));
+
+          var matchedFile = fileIds.find((obj) => obj.fileId === ids);
+          if (matchedFile) {
+            $('#LoadCeritificate').attr('src', matchedFile.files.certificate); // /VerifyQRCode.aspx/5a0c965e-4392-4f47-a91f-1237e396919f.pdf
+            $('#AppdetailsPath').attr('href', matchedFile.files.application); // https://fscop.gujfiresafetycop.in/Documents/Application/2025\2025-00116860\4b25fe4b-7035-4688-9246-7214391d3313.pdf
           }
         });
       </script>
